@@ -5,8 +5,8 @@ from .views import Blog
 class BlogSerializer(serializers.ModelSerializer):
     class Meta:
         model = Blog
-        fields = ['name', 'description', 'is_public', 'slug']
-        # fields = '__all__'
+        # fields = ['name', 'description', 'is_public', 'slug']
+        fields = '__all__'
         # exclude = ['slug']
 
 # ================================> simple serializers
